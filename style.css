@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* Variables */
+:root {
+    --content: #114;
+    --bg: #aaf;
+    --accent: gold;
+}
+
+/* Fixed width container class that will "auto-center" itself */
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 555px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+/* Flex classes */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.2em;
+    /* background-color: #faa; */
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    /* background-color: #afa; */
+}
+
+/* Utility classes */
+.bold {
+    font-weight: bold;
+}
+
+.em {
+    font-style: italic;
+}
+
+.pad {
+    padding: 1em;
+}
+
+.small {
+    font-size: small;
+}
+
+.rad {
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.gap {
+    gap: 1em
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 125px;
+    border: 2px solid black;
+}
+
+.spread {
+    width: 100%;
+}
+
+/* Anatomical classes */
+body {
+    background-color: var(--bg);
+}
+
+main.row {
+    align-items: flex-start;
+}
+
+header {
+    color: black;
+    background-color: black;
+    border-radius: 0 0 12px 12px;
+    padding: 0.25em 1em;
+}
+
+.logo {
+    font-size: xx-large;
+    font-weight: bold;
+    -webkit-text-stroke: 2px var(--bg);
+}
+
+.voter {
+    margin-left: 1em;
+}
+
+.fa-arrow-up {
+    background-color: greenyellow;
+}
+
+.fa-arrow-down {
+    background-color: #FF4A2A;
+}
+
+i {
+    border: 2px solid black;
+    border-radius: 2em;
+    padding: 0.2em 0.3em;
+}

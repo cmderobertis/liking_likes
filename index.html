@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/cd_favicon.png" type="image/x-icon">
+    <title>Likes</title>
+</head>
+<body class="col">
+    <header class="container">
+        <p class="logo">SoCal Network</p>
+    </header>
+    <h1>Quip Feed</h1>
+    <main class="row container gap">
+        <div class="card col rad pad">
+            <img src="./assets/me.jpg" alt="" class="avatar">
+            <h2>Cameron</h2>
+        </div>
+        <div class="col">
+            <div class="card rad pad col">
+                <div class="row spread">
+                    <h2>Elon Musk</h2>
+                    <div class="row voter">
+                        <i onclick="increment(likeCount1)" class="fa-solid fa-arrow-up"></i>
+                        <p class="row"><span id="likeCount1">-32</span> upvotes</p>
+                        <i onclick="decrement(likeCount1)" class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </div>
+                <p>"I'm definitely going to buy Twitter. Yeah. Absolutely."</p>
+            </div>
+            <div class="card rad pad col">
+                <div class="row spread">
+                    <h2>Forrest Gump</h2>
+                    <div class="row voter">
+                        <i onclick="increment(likeCount2)" class="fa-solid fa-arrow-up"></i>
+                        <p class="row"><span id="likeCount2">16</span> upvotes</p>
+                        <i onclick="decrement(likeCount2)" class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </div>
+                <p>"My mama always said, 'Life is like a box of chocolates. You never know what you're gonna get.'"</p>
+            </div>
+            <div class="card rad pad col">
+                <div class="row spread">
+                    <h2>Jeffrey Bezos</h2>
+                    <div class="row voter">
+                        <i onclick="increment(likeCount3)" class="fa-solid fa-arrow-up"></i>
+                        <p class="row"><span id="likeCount3">128</span> upvotes</p>
+                        <i onclick="decrement(likeCount3)" class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </div>
+                <p>"CEO. Entrepreneur. Born in 1964."</p>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
